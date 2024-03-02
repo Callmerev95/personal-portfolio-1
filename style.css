@@ -1,5 +1,11 @@
+/* ==========================================
+              Google Fonts
+=========================================== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+/* ==========================================
+              Global CSS
+=========================================== */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +22,8 @@
   --second-bg-color: #323946;
   --text-color: #ffffffe2;
 
-  --main-color: rgb(0, 251, 255);
+  --main-color: #00fbff;
+  --transition: all 0.4s ease-in;
 }
 
 html {
@@ -31,9 +38,13 @@ body {
 
 section {
   min-height: 100vh;
+  min-width: 100%;
   padding: 7rem 9% 2rem;
 }
 
+/* ==========================================
+              Header
+=========================================== */
 .header {
   position: fixed;
   top: 0;
@@ -58,6 +69,9 @@ section {
   cursor: default;
 }
 
+/* ==========================================
+              Navbar
+=========================================== */
 .navbar a {
   font-size: 1.1rem;
   color: var(--text-color);
@@ -80,19 +94,24 @@ section {
   display: none;
 }
 
+/* ==========================================
+              Home
+=========================================== */
 .home {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .home-img {
-  margin-left: 800px;
-  margin-top: -480px;
+  /* margin-left: 800px;
+  margin-top: -480px; */
+  margin-top: 5rem;
+  margin-right: -5rem;
   z-index: -1;
 }
 .home-img img {
-  width: 45vw;
+  width: 40vw;
   animation: floatImage 4s ease-in-out infinite;
   -webkit-animation: floatImage 4s ease-in-out infinite;
 }
@@ -121,7 +140,7 @@ section {
 }
 
 .home-content {
-  margin-top: -50px;
+  margin-top: -10rem;
   width: 90%;
 }
 .home-content h3 {
@@ -141,10 +160,6 @@ span {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.5;
-}
-
-.home-content p {
-  font-size: 1.1rem;
 }
 
 .social-media a {
@@ -199,6 +214,9 @@ span {
   box-shadow: none;
 }
 
+/* ==========================================
+              About
+=========================================== */
 .about {
   display: flex;
   justify-content: center;
@@ -225,6 +243,9 @@ span {
   margin: 2rem 0 3rem;
 }
 
+/* ==========================================
+              Services
+=========================================== */
 .services h2 {
   margin-bottom: 5rem;
 }
@@ -235,6 +256,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 .services-container .services-box {
   flex: 1 1 25rem;
@@ -274,12 +296,15 @@ span {
   margin: 1rem 0 1.5rem;
 }
 
+/* ==========================================
+              Portfolio
+=========================================== */
 .portfolio {
   background: var(--second-bg-color);
 }
 
 .portfolio h2 {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .portfolio-container {
@@ -381,8 +406,12 @@ span {
   font-size: 1.5rem;
   color: var(--second-bg-color);
 }
+
+/* ==========================================
+              Contact
+=========================================== */
 .contact h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .contact form {
   max-width: 45rem;
@@ -424,6 +453,9 @@ span {
   cursor: pointer;
 }
 
+/* ==========================================
+              Footer
+=========================================== */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -462,134 +494,4 @@ span {
 .footer-iconTop a i {
   font-size: 1.5rem;
   color: var(--second-bg-color);
-}
-
-/* BREAKPOINTS */
-@media (max-width: 1200px) {
-  html {
-    font-size: 55%;
-  }
-}
-
-@media (max-width: 991px) {
-  .header {
-    padding: 2rem 3%;
-  }
-  section {
-    padding: 10rem 3% 2rem;
-  }
-  .footer {
-    padding: 2rem 3%;
-  }
-}
-
-@media (max-width: 768px) {
-  #menu-icon {
-    font-size: 25px;
-    display: block;
-  }
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem 3%;
-    background: var(--bg-color);
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    display: none;
-  }
-
-  .navbar.active {
-    display: block;
-  }
-  .navbar a {
-    text-align: center;
-    display: block;
-    font-size: 1.8rem;
-    margin: 4.1rem 0;
-  }
-
-  section {
-    min-height: 90vh;
-  }
-
-  .home {
-    flex-direction: column;
-  }
-
-  .home-content h3 {
-    margin-top: 10px;
-    font-size: 2.2rem;
-  }
-
-  .home-content h3:nth-child(1) {
-    margin-top: 20rem;
-  }
-
-  .home-content h1 {
-    margin-top: 10px;
-    margin-left: 5px;
-    font-size: 4rem;
-    letter-spacing: 2px;
-  }
-
-  .home-content p {
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
-
-  .home-img {
-    margin-top: -52rem;
-    width: 109%;
-    z-index: -1;
-  }
-  .home-img img {
-    width: 145vw;
-  }
-
-  .about {
-    min-height: 100vh;
-    flex-direction: column-reverse;
-  }
-  .about h2 {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  .about p {
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
-  .about img {
-    width: 70vw;
-    margin-top: 2rem;
-  }
-
-  .services h2 {
-    margin-bottom: 5rem;
-  }
-
-  .services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-  .services-container .services-box {
-    flex: 1 1 1 25rem;
-    padding: 1rem 2rem 4rem;
-  }
-
-  .services-box p {
-    font-size: 1rem;
-    margin: 1rem 0 1.5rem;
-  }
-
-  .contact {
-    background: green;
-  }
-  .contact h2 {
-    margin-top: 50px;
-  }
 }

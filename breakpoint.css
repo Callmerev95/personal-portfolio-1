@@ -1,0 +1,259 @@
+/* =========================
+         Desktop
+========================== */
+@media (max-width: 1281px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1050px) {
+  html {
+    font-size: 12.5px;
+  }
+  .home-img img {
+    margin-top: 8.5rem;
+    margin-right: 20rem;
+  }
+  .home-content h3 {
+    font-size: 2.5rem;
+  }
+  .home-content h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* =========================
+         Tablet 
+========================== */
+@media (max-width: 835px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  #menu-icon {
+    display: block;
+    margin-left: 43rem;
+    font-size: 2.5rem;
+  }
+  .navbar {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    position: absolute;
+    top: 11rem;
+    right: 0;
+    font-size: 25px;
+    width: 100%;
+    box-shadow: 6px 6px 12px #1f242d, -6px -6px 12px #1f242d;
+    background: #323946;
+    min-width: 300px;
+    height: 30rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+    padding: 3rem 0;
+    z-index: 9999999;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+  }
+  .navbar.active {
+    top: 5rem;
+    visibility: visible;
+    opacity: 1;
+  }
+  .navbar a {
+    font-size: 20px;
+  }
+  .home {
+    flex-direction: column-reverse;
+  }
+  .home-img img {
+    width: 55vw;
+    margin-top: -10rem;
+    margin-left: 18rem;
+    margin-bottom: 0;
+  }
+  .home-content {
+    margin-top: -15rem;
+    text-align: center;
+  }
+  .home-content h1 {
+    font-size: 4rem;
+    line-height: 1.5;
+  }
+  .home-content h3 {
+    font-size: 3rem;
+  }
+  .social-media a {
+    width: 5.5rem;
+    height: 5.5rem;
+    margin-left: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+  }
+  .btn {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about-img img {
+    width: 44vw;
+  }
+  .about-content,
+  .about-content h2,
+  .about-content h3,
+  .about-content p {
+    text-align: center;
+  }
+  .about-content p {
+    font-size: 1.3rem;
+  }
+  .services-container .services-box {
+    flex: 100rem;
+  }
+  .services-box p {
+    font-size: 1.3rem;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    height: 700px;
+  }
+  .portfolio-layer p {
+    font-size: 1.3rem;
+  }
+  .contact form {
+    max-height: 70rem;
+  }
+  .contact {
+    margin-bottom: -4.5rem;
+  }
+  .contact form .input-box input,
+  .contact form textarea {
+    font-size: 1.5rem;
+  }
+  .contact form textarea {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 769px) {
+  #menu-icon {
+    margin-left: 35rem;
+  }
+  .home-img img {
+    width: 50vw;
+  }
+  .home-content h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  .home-content h3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* =========================
+         Mobile 
+========================== */
+@media (max-width: 429px) {
+  .logo {
+    font-size: 1.8rem;
+  }
+  #menu-icon {
+    margin-left: -30rem;
+    font-size: 2rem;
+  }
+
+  .home-img {
+    margin-top: 8rem;
+    margin-right: -3.5rem;
+  }
+  .home-img img {
+    width: 65vw;
+  }
+  .home-content h1 {
+    font-size: 2rem;
+  }
+  .home-content h3 {
+    font-size: 1.6rem;
+  }
+  .social-media {
+    margin-left: 1rem;
+    margin-bottom: -1rem;
+  }
+  .social-media a {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 0.8rem;
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .about-img img {
+    width: 45vw;
+    margin-top: -10rem;
+  }
+  .about-content p {
+    font-size: 1rem;
+  }
+  .services-box p {
+    font-size: 1rem;
+  }
+  .portfolio-container {
+    grid-template-columns: repeat(1, 1fr);
+    height: 1600px;
+    gap: 1.4rem;
+  }
+  .contact form .input-box input,
+  .contact form textarea {
+    font-size: 1rem;
+  }
+  .contact form textarea {
+    height: 20rem;
+  }
+  .footer-text p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 391px) {
+  .home-content h1 {
+    line-height: 2;
+  }
+  .home-content h3 {
+    font-size: 1.4rem;
+  }
+  .social-media a {
+    margin-left: 0.1rem;
+    font-size: 1.6rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .contact form textarea {
+    height: 15rem;
+  }
+  .contact form .btn {
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+  }
+  .footer-text p {
+    font-size: 0.8rem;
+  }
+  .footer-iconTop a i {
+    font-size: 1rem;
+  }
+}
